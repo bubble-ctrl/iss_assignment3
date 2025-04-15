@@ -8,6 +8,11 @@
     font-family: 'Shooting Star';
     src: url('fonts/Baby Sparkle.ttf') format('truetype');
   }
+
+  @font-face {
+    font-family: 'Andila';
+    src: url('fonts/Magic\ Bubble.ttf') format('truetype');
+  }
   
   html, body {
     font-family: 'Segoe UI', sans-serif;
@@ -29,8 +34,8 @@
   }
   
   .logo {
+    font-family: 'Andila';
     font-size: 1.5rem;
-    font-weight: bold;
     color: #e60064;
   }
   
@@ -100,7 +105,7 @@
     position: absolute;
     width: 100px;
     height: 100px;
-    border: 3px solid #e60064;
+    border: 5px solid #92c4c1;
     z-index: 3;
     pointer-events: none;
   }
@@ -200,10 +205,10 @@
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
   }
   
-  .fancy-btn:nth-child(1) { background-color: #aec6cf; }
-  .fancy-btn:nth-child(2) { background-color: #f7cac9; }
-  .fancy-btn:nth-child(3) { background-color: #98fb98; }
-  .fancy-btn:nth-child(4) { background-color: #ffd699; }
+  .fancy-btn:nth-child(1) { background-color: #ebcb3f; }
+  .fancy-btn:nth-child(2) { background-color: #d17e7d; }
+  .fancy-btn:nth-child(3) { background-color: #469e46; }
+  .fancy-btn:nth-child(4) { background-color: #3faceb; }
   
   .fancy-btn::after {
     content: "";
