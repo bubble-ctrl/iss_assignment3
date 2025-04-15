@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jaipur-styles.css" />
+    <title>My Home - Jaipur</title>
+</head>
+<body>
+    <a href="index.html" class="back-button">← Back</a>
+
+    <div class="container">
+        <h1>JAIPUR</h1>
+        
+        <div class="description">
+            <p>I have lived in Jaipur my whole life before coming to Hyderabad for college. The pink city, known for its stunning architecture, rich history, and vibrant culture, Jaipur is the capital of Rajasthan. Founded in 1727 by Maharaja Sawai Jai Singh II, the city is famous for its distinctive pink-colored buildings.</p>
+            <p>From the majestic Amber Fort to the iconic Hawa Mahal, from the astronomical wonders of Jantar Mantar to the grandeur of City Palace, Jaipur offers a perfect blend of royal heritage and contemporary charm that captivates visitors from around the world.</p>
+        </div>
+        
+        <div class="slideshow-container">
+            <div class="slide active">
+                <img src="images/jaipur/hawa-mahal.jpg" alt="Hawa Mahal" class="slideshow-image">
+            </div>
+            
+            <div class="slide">
+                <img src="images/jaipur/amber-fort.jpg" alt="Amber Fort" class="slideshow-image">
+            </div>
+            
+            <div class="slide">
+                <img src="images/jaipur/city-palace.jpg" alt="City Palace" class="slideshow-image">
+            </div>
+            
+            <div class="slide">
+                <img src="images/jaipur/jantar-mantar.jpg" alt="Jantar Mantar" class="slideshow-image">
+            </div>
+            
+            <div class="slide">
+                <img src="images/jaipur/jal-mahal.jpg" alt="Jal Mahal" class="slideshow-image">
+            </div>
+            
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+    </div>
+    
+    <footer>
+        <p>My Home - Jaipur, The Pink City | © 2025</p>
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+        const slides = document.getElementsByClassName("slide");
+        
+        showSlide(slideIndex);
+        
+        function changeSlide(n) {
+            showSlide(slideIndex += n);
+        }
+        
+        function showSlide(n) {
+            if (n >= slides.length) {slideIndex = 0}
+            if (n < 0) {slideIndex = slides.length - 1}
+            
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].classList.remove("active");
+            }
+            
+            slides[slideIndex].classList.add("active");
+        }
+    </script>
+</body>
+</html>

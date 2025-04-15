@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="art-styles.css" />
+    <title>My Art Gallery</title>
+</head>
+<body>
+    <a href="index.html" class="back-button">← Back</a>
+    
+    <h1>My Art</h1>
+    
+    <div class="gallery">
+        
+        <div class="art-item">
+            <img src="images/art/Autumn.jpg" alt="Autumn">
+        </div>
+        
+        <div class="art-item">
+            <img src="images/art/Boat.jpg" alt="Boat">
+        </div>
+        
+        <div class="art-item">
+            <img src="images/art/Cottage watercolor.jpg" alt="Cottage Watercolor">
+        </div>
+        
+        <div class="art-item">
+            <img src="images/art/Depressed.jpg" alt="Depressed">
+        </div>
+        
+        <div class="art-item">
+            <img src="images/art/Family.jpg" alt="Family">
+        </div>
+        
+        <div class="art-item">
+            <img src="images/art/Flowers.jpg" alt="Flowers">
+        </div>
+        
+        <div class="art-item">
+            <img src="images/art/Flowers abstract.jpg" alt="Flowers Abstract">
+        </div>
+        
+        <div class="art-item">
+            <img src="images/art/Hope.jpg" alt="Hope">
+        </div>
+        
+        <div class="art-item">
+            <img src="images/art/IMG-20250222-WA0026.jpg" alt="Image 20250222">
+        </div>
+        
+        <div class="art-item">
+            <img src="images/art/Keychain.jpg" alt="Keychain">
+        </div>
+        
+        <div class="art-item">
+            <img src="images/art/Krishna abstract.jpg" alt="Krishna Abstract">
+        </div>
+        
+        <div class="art-item">
+            <img src="images/art/little bit better album cover.jpg" alt="Album Cover">
+        </div>
+        
+        <div class="art-item">
+            <img src="images/art/Oil painting.jpg" alt="Oil Painting">
+        </div>
+        
+        <div class="art-item">
+            <img src="images/art/origami.jpg" alt="Origami">
+        </div>
+        
+        <div class="art-item">
+            <img src="images/art/Peacock on cloth.jpg" alt="Peacock on Cloth">
+        </div>
+        
+        <div class="art-item">
+            <img src="images/art/Portrait.jpg" alt="Portrait">
+        </div>
+        
+        <div class="art-item">
+            <img src="images/art/Pot.jpg" alt="Pot">
+        </div>
+        
+        <div class="art-item">
+            <img src="images/art/Red tulips.jpg" alt="Red Tulips">
+        </div>
+        
+        <div class="art-item">
+            <img src="images/art/Road sign.jpg" alt="Road Sign">
+        </div>
+        
+        <div class="art-item">
+            <img src="images/art/Selena.jpg" alt="Selena">
+        </div>
+        
+        <div class="art-item">
+            <img src="images/art/watercolor hut.jpg" alt="Watercolor Hut">
+        </div>
+    </div>
+    
+    <!-- Lightbox container -->
+    <div class="lightbox">
+        <div class="lightbox-content">
+            <img src="" alt="Enlarged Image">
+        </div>
+    </div>
+    
+    <script>
+        // Get all art items and lightbox elements
+        const artItems = document.querySelectorAll('.art-item');
+        const lightbox = document.querySelector('.lightbox');
+        const lightboxImg = lightbox.querySelector('img');
+        
+        // Add click event to each art item
+        artItems.forEach(item => {
+            item.addEventListener('click', function() {
+                const imgSrc = this.querySelector('img').src;
+                const imgAlt = this.querySelector('img').alt;
+                
+                // Set lightbox image source and alt
+                lightboxImg.src = imgSrc;
+                lightboxImg.alt = imgAlt;
+                
+                // Show lightbox
+                lightbox.classList.add('active');
+            });
+        });
+        
+        // Close lightbox when clicking outside the image
+        lightbox.addEventListener('click', function(e) {
+            if (e.target !== lightboxImg) {
+                lightbox.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>

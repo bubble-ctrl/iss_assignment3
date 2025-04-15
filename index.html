@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Laveena's Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+      <div class="logo">Laveena</div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+  
+    <section id="about" class="about-section">
+      <div class="pattern-half">
+        <img src="images/pattern.png" alt="Pattern" />
+      </div>
+  
+      <div class="profile-image">
+        <img src="images/profile.jpg" alt="Profile Picture" />
+        <div class="doodle-border top-right"></div>
+        <div class="doodle-border bottom-left"></div>
+      </div>
+  
+      <div class="about-text">
+        <h1>Hello!</h1>
+        <h2>I'm Laveena</h2>
+        <p>
+            I'm currently pursuing a B.Tech at IIIT Hyderabad, originally from the vibrant city of Jaipur. I enjoy solving problems—whether it’s cracking a tricky coding challenge or finding creative solutions in everyday life. I'm also someone who genuinely loves connecting with people and having meaningful conversations. Outside of academics, you’ll usually find me immersed in art, reading or vibing to some good music—my favorite ways to unwind and stay inspired. This page gives a glimpse into my journey and passions.
+        </p>
+      </div>
+  
+      <div class="button-bar">
+        <div class="custom-buttons">
+          <a class="fancy-btn" href="jaipur.html"><span>My Home</span></a>
+          <a class="fancy-btn" href="art.html"><span>My Art</span></a>
+          <a class="fancy-btn" href="Resume.pdf" target="_blank"><span>CV</span></a>
+          <a class="fancy-btn" href="hobbies.html"><span>Hobbies</span></a>
+        </div>
+      </div>
+    </section>
+  
+    <section id="education" class="education-section">
+      <div class="education-content">
+        <div class="timeline">
+          <h2 class="edu-heading">Education</h2>
+          <div class="edu-item" data-alt="B.Tech and MS in Computer Science">
+            <div class="marker"></div>
+            <div class="edu-text">
+              <h3>IIIT Hyderabad - CG:8.72</h3>
+              <p>2024–Present</p>
+            </div>
+          </div>
+          <div class="edu-item" data-alt="Completed my 12th with English, IP, Physics, Chemistry & Maths.">
+            <div class="marker"></div>
+            <div class="edu-text">
+              <h3>Bhartiya Vidya Bhavan Vidyashram School- CBSE 12TH boards:97.4%</h3>
+              <p>2022–2024</p>
+            </div>
+          </div>
+          <div class="edu-item" data-alt="Completed my 10th with English, Sanskrit, Science, Maths, Social Science and AI.">
+            <div class="marker"></div>
+            <div class="edu-text">
+              <h3>Bhartiya Vidya Bhavan Vidyashram School- CBSE 10th boards:97.4%</h3>
+              <p>2011–2022</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="achievements-section">
+          <h2 class="achievements-heading">Achievements</h2>
+          <p class="achievements-text">
+            <strong>School</strong>
+            <br> Won multiple awards in arts/painting in regional, state as well as national level.
+            <br> Won silver, gold, bronze in district level Team Lawn Tennis Tournaments at from 6th standard till 8th standard respectively.
+            <br> Won multiple awards in academics and athletics at school level.
+            <br>
+            <br>
+            <strong>College</strong>
+            <br>Won 2nd in Lockout (a competitive programming competition organised by IIIT Hyderabad) in novice category.
+          </p>
+        </div>
+      </div>
+    </section>
+  
+    <section id="skills" class="skills-section">
+      <div class="leaf-decoration leaf-top-right"></div>
+      <div class="leaf-decoration leaf-bottom-left"></div>
+      
+      <div class="skills-container">
+        <h2 class="skills-heading">My Skills</h2>
+        
+        <div class="skills-categories">
+          <div class="skill-category">
+            <h3 class="category-title">Advanced Level</h3>
+            <div class="skill-list">
+              <span class="skill-tag">C/C++</span>
+              <span class="skill-tag">MySql</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">HTML/CSS</span>
+            </div>
+          </div>
+          
+          <div class="skill-category">
+            <h3 class="category-title">Intermediate</h3>
+            <div class="skill-list">
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">Adobe Photoshop</span>
+              <span class="skill-tag">Canva</span>
+              <span class="skill-tag">ESP32/Arduino</span>
+            </div>
+          </div>
+          
+          <div class="skill-category">
+            <h3 class="category-title">Intermediate Level</h3>
+            <div class="skill-list">
+              <span class="skill-tag">Postman</span>
+              <span class="skill-tag">VS code</span>
+              <span class="skill-tag">git</span>
+              <span class="skill-tag">github</span>
+              <span class="skill-tag">mongoDB</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="text-analysis" class="text-analysis-section">
+        <div class="text-analysis-container">
+          <h2 class="text-analysis-heading">Text Analysis Tool</h2>
+          <p>Enter text (even over 10,000 words) and click "Analyze" to see statistics.</p>
+          <textarea id="textInput" rows="10" placeholder="Paste or type your text here..."></textarea>
+          <button id="analyzeBtn" class="fancy-btn"><span>Analyze</span></button>
+          <div id="analysisOutput"></div>
+        </div>
+      </section>
+
+    <section id="contact" class="contact-section">
+      <div class="contact-container">
+        <h2 class="contact-heading">Get In Touch</h2>
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <span>+91 98765 43210</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>laveena.jain@research.iiit.ac.in</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>laveenajain274@gmail.com</span>
+          </div>
+          <div class="contact-links">
+            <a href="https://www.instagram.com/loveena4746?igsh=eHRuOTRxMmMycjhs" target="_blank" class="social-link">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/laveena-jain-954444320?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="social-link">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/bubble-ctrl" target="_blank" class="social-link">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  
+
+    <footer>
+      <p>© 2025 Laveena. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+  </html>
